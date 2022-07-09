@@ -67,42 +67,6 @@ let perro = new Perro("perro", 15, "marrón", "Collie"); // Se instancia con la 
 let pajaro = new Animal("pajaro", 5, "rojo");
 let gato = new Animal("gato", 18, "negro");
 
-
-// perro.verInfo();
-// pajaro.verInfo();
-// gato.verInfo();
-// perro.ladrar();
 perro.setRaza = "Dalmata"; // A pesar de tener estructura de metodo en su declaración, el setter se llama como un atributo.
 document.write(`La raza de mi perro es ${perro.getRaza}` + "<br>"); // El getter en funcionamiento.
 Perro.mensajeParaPerros();
-
-const titulo = document.querySelector(".titulo");
-let input = document.querySelector(".input-normal");
-
-titulo.setAttribute("contentEditable", "true");
-titulo.setAttribute("tabindex", "1");
-input.placeholder = "Hola";
-input.tabindex = -1;
-input.disabled = "true";
-
-let subtitulo = document.getElementById("titulo-secundario");
-subtitulo.style.color = "#5CA2AC";
-subtitulo.hidden = "false";
-subtitulo.removeAttribute("hidden");
-
-document.write(subtitulo.style.color);
-input.className = "pocho";
-input.classList.add("pepe");
-document.write("<br>" + input.classList.item(1));
-document.write("<br>" + input.classList.contains("toto"));
-document.write("<br>" + input.textContent);
-document.write("<br>" + input.innerHTML);
-document.write("<br>" + input.outerHTML);
-
-let parrafo = document.querySelector('.parrafito');
-document.write('<br>' + parrafo.outerHTML);
-document.write('<br>' + parrafo.innerHTML);
-document.write('<br>' + parrafo.textContent);
-alert('<br>' + parrafo.textContent);
-alert('<br>' + parrafo.innerHTML);
-alert('<br>' + parrafo.textContent);
