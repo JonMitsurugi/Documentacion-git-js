@@ -2,8 +2,6 @@
 
 ## Conceptos nuevos aprendidos
 
----
-
 ### Declarar e inicializar
 
 Siempre pensé que inicializar una variable era colocar el scope y el nombre de esta y declararla era darle un valor. Bueno, resulta que es al revés.
@@ -59,7 +57,6 @@ Metodos de selección de elementos.
 | getElementsByTagName(*tag*) | Devuelve una referencia al o a los elementos por su etiqueta. |
 | querySelector(*selector*) | Devuelve el primer elemento del documento que coincida con el grupo especificado de selectores (separados con coma). En el selector debe escribirse el punto. |
 | querySelectorAll(*selector*) | Devuelve una NodeList estatica que representa una lista de elementos del documento que coinciden con el grupo de selectores indicados. |
-| | |
 
 ```js
 let subtitulo =  document.querySelector(".subtitulo");
@@ -74,7 +71,6 @@ Metodos para definir, obtener y eliminar atributos.
 | setAttribute(*name*,*value*) | Establece el valor de un atributo en el elemento indicado. Si este ya existe, actualiza el atributo. Con los atributos booleanos solo es necesario poner un string vacio pues se los considera true solo con estar presentes. |
 | getAttribute(*attribute*) | Devuelve el valor del atributo especificado en el elemento. Si el attributo no existe devuelve null o "". |
 | removeAttribute() | Elimina un atributo del elemento especificado. |
-| | |
 
 ```js
 let subtituloSinClase = subtitulo.setAttribute("contentEditable", "true");
@@ -91,7 +87,6 @@ let subtituloSinClase = subtitulo.setAttribute("contentEditable", "true");
 | id | Representa el identificador del elemento, que debe ser unico en el documento. |
 | className  | Obtiene o establece el valor del artibuto class del elemento especificado.|
 | style | Accede a cualquier atributo y el cual se puede modificar. La sintaxis es `element.style.elAtributo = "valor"`. De esta forma no es  necesario utilizar `setAttribute()`.|
-| | |
 
 #### **Atributos de inputs**
 
@@ -106,7 +101,6 @@ let subtituloSinClase = subtitulo.setAttribute("contentEditable", "true");
 | required  | Es un atribuo booleano que determina que el input debe ser completado con un valor para poder ser enviado. |
 | disabled | Atributo booleano que en caso de ser true, vuelve el objeto inusable y a prueba de clics. |
 | checked | Atributo booleano que estando presente marca al input, si es un `checkbox` o `radio`. |
-| | |
 
 #### **Clases, classLists y metodos de classLists**
 
@@ -118,7 +112,6 @@ let subtituloSinClase = subtitulo.setAttribute("contentEditable", "true");
 |toggle(*string*, *boolean*) | Si la clase se encuentra, la elimina y devuelve false. Sino la agrega y devuelve true. Si esta el segundo argumento, fuerza sla eliminación o creación segun su valor. |
 |contains(*string*) | Comprueba si la clase existe dentro del atributo de la clase del elemento. |
 |replace(*oldClass*, *newClass*) | Reemplaza la clase vieja por la nueva. |
-| | |
 
 ```js
 let esTituloGrande = titulo.classList.contains("titulo-grande"); 
@@ -140,10 +133,7 @@ let esTituloGrande = titulo.classList.contains("titulo-grande");
 | createTextNode() |devuelve o establece la sintaxis HTML describiendo los descendientes del elemento. |
 | createDocumentFragment() | Representa el contenido de texto de un nodo y sus dencendientes. |
 
-
 ## Repasando
-
----
 
 ### For in
 
