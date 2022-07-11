@@ -2,6 +2,8 @@
 
 ## Atajos
 
-* Comentar una linea : Ctrl + }.
+* Comentar una linea : `Ctrl + }`.
 
-* Comentar varias lineas : Shift + Alt + A.
+* Comentar varias lineas : `Shift + Alt + A`.
+
+* Ocultar / mostrar Panel de Terminal : `Ctrl + J`. 
