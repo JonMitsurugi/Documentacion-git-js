@@ -123,16 +123,21 @@ let esTituloGrande = titulo.classList.contains("titulo-grande");
 | ------ | -------- |
 | textContent | Representa el contenido de texto de un nodo y sus dencendientes. |
 | innerHtml |devuelve o establece la sintaxis HTML describiendo los descendientes del elemento. |
-| textContent | Representa el contenido de texto de un nodo y sus dencendientes. |
+| outerHtml | Devuelve el código y las etiquetas de un elemento Html. |
 
 #### **Creación de elementos**
 
 | Atributo | Definión |
 | ------ | -------- |
 | createElements(*tagname*, \[*options*\]) | Crea un elemento html reepresentado por su tagname. Tiene que estar escrito en mayúscula. |
-| createTextNode() |devuelve o establece la sintaxis HTML describiendo los descendientes del elemento. |
+| createTextNode() | Devuelve o establece la sintaxis HTML describiendo los descendientes del elemento. |
 | createDocumentFragment() | Representa el contenido de texto de un nodo y sus dencendientes. |
 
+#### **Obtención y modificación de childs**
+
+| Atributo | Definión |
+| ------ | -------- |
+| appendChild(*child*) | Agrega un nuevo nodo al final de la lista de un elemento hijo de un elemento padre especificado. |
 ## Repasando
 
 ### For in
